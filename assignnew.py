@@ -5,12 +5,14 @@ import pandas as pd
 from pprint import pprint
 
 # ---------- SETTINGS ----------
-CSV_PATH = r"C:/Users/User/Desktop/COMPUTER EVOLUTION/program_ratings_modified.csv" # change to your file path
+CSV_PATH = r"C:/Users/User/Desktop/COMPUTER EVOLUTION/program_ratings.csv"  # ✅ fixed file path
 HOUR_COLUMNS = [f"Hour {h}" for h in range(6, 24)]  # Hour 6..Hour 23 inclusive
 GENERATIONS = 200
 POPULATION_SIZE = 100
 ELITISM_SIZE = 4
 TOURNAMENT_SIZE = 2
+# -------------------------------
+
 # -------------------------------
 
 def read_ratings(csv_path):
